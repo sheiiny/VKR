@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<title>UML аутентификация сервисного клиента ERP</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML аутентификация сервисного клиента ERP</text>
+<rect x="30.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="150.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ERP Client</text>
+<polyline points="150.0,140 150.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="410.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="530.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">API</text>
+<polyline points="530.0,140 530.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="790.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">AuthService</text>
+<polyline points="910.0,140 910.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1170.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">CredentialStore</text>
+<polyline points="1290.0,140 1290.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1550.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1670.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">KeyStore</text>
+<polyline points="1670.0,140 1670.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1930.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2050.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Аудит</text>
+<polyline points="2050.0,140 2050.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="340.0" y="189.0" text-anchor="middle" font-family="Arial" font-size="24">1 POST /auth/token: clientId,</text>
+<text x="340.0" y="219.0" text-anchor="middle" font-family="Arial" font-size="24">clientSecret по HTTPS</text>
+<polyline points="150.0,227 530.0,227" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,227 520.0013767535762,231.58557882672133 520.0013767535762,222.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="227" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="283.0" text-anchor="middle" font-family="Arial" font-size="24">2 Authenticate(clientId, secret)</text>
+<polyline points="530.0,291 910.0,291" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,291 900.0013767535762,295.5855788267213 900.0013767535762,286.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="291" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1100.0" y="347.0" text-anchor="middle" font-family="Arial" font-size="24">3 Учётная запись, хеш секрета,</text>
+<text x="1100.0" y="377.0" text-anchor="middle" font-family="Arial" font-size="24">scopes, cabinetIds</text>
+<polyline points="910.0,385 1290.0,385" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1290.0,385 1280.0013767535763,389.5855788267213 1280.0013767535763,380.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1285.0" y="385" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1100.0" y="441.0" text-anchor="middle" font-family="Arial" font-size="24">4 Данные проверки</text>
+<polyline points="1290.0,449 910.0,449" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="919.9986232464238,444.4144211732787 910.0,449 919.9986232464238,453.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="910.0,513 968.0,513 968.0,532 910.0,532" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,532 919.9986232464238,527.4144211732787 919.9986232464238,536.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="918.0" y="510.0" text-anchor="start" font-family="Arial" font-size="24">5 Проверить хеш и блокировку</text>
+<rect x="25" y="551" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="578.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">alt [учётные данные корректны]</text>
+<text x="1290.0" y="631.0" text-anchor="middle" font-family="Arial" font-size="24">6 Активный ключ RS256 по kid</text>
+<polyline points="910.0,639 1670.0,639" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1670.0,639 1660.0013767535763,643.5855788267213 1660.0013767535763,634.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1665.0" y="639" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="695.0" text-anchor="middle" font-family="Arial" font-size="24">7 Защищённый доступ к ключу</text>
+<polyline points="1670.0,703 910.0,703" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="919.9986232464238,698.4144211732787 910.0,703 919.9986232464238,707.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="759.0" text-anchor="middle" font-family="Arial" font-size="24">8 AuthResponse: JWT</text>
+<polyline points="910.0,767 530.0,767" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,762.4144211732787 530.0,767 539.9986232464238,771.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="823.0" text-anchor="middle" font-family="Arial" font-size="24">9 200 с accessToken и traceId</text>
+<polyline points="530.0,831 150.0,831" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,826.4144211732787 150.0,831 159.99862324642373,835.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,873 2175,873" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="40" y="902.0" text-anchor="start" font-family="Arial" font-size="24">[учётные данные неверны либо превышен лимит]</text>
+<text x="720.0" y="941.0" text-anchor="middle" font-family="Arial" font-size="24">invalid_credentials / rate_limit</text>
+<polyline points="910.0,949 530.0,949" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,944.4144211732787 530.0,949 539.9986232464238,953.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="1005.0" text-anchor="middle" font-family="Arial" font-size="24">401 / 429 с traceId</text>
+<polyline points="530.0,1013 150.0,1013" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,1008.4144211732787 150.0,1013 159.99862324642373,1017.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,551 25,1055 2175,1055 2175,551" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="35" y="1432.0" text-anchor="start" font-family="Arial" font-size="24">Сплошная стрелка — вызов; пунктир — возврат; рамка — фрагмент взаимодействия</text>
+</svg>

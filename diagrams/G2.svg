@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма компонентов и предоставляемых интерфейсов</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма компонентов и предоставляемых интерфейсов</text>
+<rect x="50" y="130" width="370" height="160" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="235.0" y="163.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="235.0" y="191.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">ToolCabinetAgent</text>
+<text x="62" y="227.8" text-anchor="start" font-family="Arial" font-size="23">IItmReader → ToolEvent</text>
+<text x="62" y="256.55" text-anchor="start" font-family="Arial" font-size="23">IInternalWriter → COMMIT</text>
+<rect x="378" y="142" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="373" y="147" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="373" y="155" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="600" y="130" width="420" height="160" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="810.0" y="163.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="810.0" y="191.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">ToolCabinetApi</text>
+<text x="612" y="227.8" text-anchor="start" font-family="Arial" font-size="23">IEventsQuery; IStockQuery</text>
+<text x="612" y="256.55" text-anchor="start" font-family="Arial" font-size="23">IEventAcknowledgement</text>
+<rect x="978" y="142" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="973" y="147" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="973" y="155" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1180" y="130" width="370" height="160" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1365.0" y="163.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="1365.0" y="191.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">ERP Integration Client</text>
+<text x="1192" y="227.8" text-anchor="start" font-family="Arial" font-size="23">Планировщик; токен</text>
+<text x="1192" y="256.55" text-anchor="start" font-family="Arial" font-size="23">Проводка и ACK</text>
+<rect x="1508" y="142" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1503" y="147" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1503" y="155" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="50" y="535" width="370" height="170" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="235.0" y="568.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="235.0" y="596.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">ExchangeStore</text>
+<text x="62" y="632.8" text-anchor="start" font-family="Arial" font-size="23">IEventRepository</text>
+<text x="62" y="661.55" text-anchor="start" font-family="Arial" font-size="23">ISnapshotRepository</text>
+<text x="62" y="690.3" text-anchor="start" font-family="Arial" font-size="23">IBatchRepository</text>
+<rect x="378" y="547" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="373" y="552" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="373" y="560" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="600" y="535" width="420" height="170" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="810.0" y="568.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="810.0" y="596.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">ServerErpAdapter</text>
+<text x="612" y="632.8" text-anchor="start" font-family="Arial" font-size="23">IErpAdapter</text>
+<text x="612" y="661.55" text-anchor="start" font-family="Arial" font-size="23">Mapping и DTO</text>
+<rect x="978" y="547" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="973" y="552" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="973" y="560" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1180" y="535" width="370" height="170" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1365.0" y="568.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">«component»</text>
+<text x="1365.0" y="596.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">AuthService и Audit</text>
+<text x="1192" y="632.8" text-anchor="start" font-family="Arial" font-size="23">ITokenIssuer; IAuthorization</text>
+<text x="1192" y="661.55" text-anchor="start" font-family="Arial" font-size="23">IAuditSink</text>
+<rect x="1508" y="547" width="22" height="20" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1503" y="552" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="1503" y="560" width="12" height="7" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1180,210 1020,210" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1029.9986232464237,205.41442117327867 1020,210 1029.9986232464237,214.58557882672133" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1100.0" y="199.0" text-anchor="middle" font-family="Arial" font-size="19">HTTPS REST</text>
+<polyline points="235,290 235,535" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="230.41442117327867,525.0013767535762 235,535 239.58557882672133,525.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="235.0" y="401.5" text-anchor="middle" font-family="Arial" font-size="19">write/read</text>
+<polyline points="810,290 810,535" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="805.4144211732787,525.0013767535762 810,535 814.5855788267213,525.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="810.0" y="401.5" text-anchor="middle" font-family="Arial" font-size="19">IErpAdapter</text>
+<polyline points="600,625 420,625" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="429.99862324642373,620.4144211732787 420,625 429.99862324642373,629.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="510.0" y="614.0" text-anchor="middle" font-family="Arial" font-size="19">Repository</text>
+<polyline points="1020,625 1180,625" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1170.0013767535763,629.5855788267213 1180,625 1170.0013767535763,620.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1100.0" y="614.0" text-anchor="middle" font-family="Arial" font-size="19">Auth / Audit</text>
+<polygon points="50,785 1532,785 1550,803 1550,895 50,895" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1532,785 1532,803 1550,803" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="60" y="815.0" text-anchor="start" font-family="Arial" font-size="22">Агент использует только IInternalWriter хранилища; HTTP-вызов API агентом не предусмотрен. ERP-клиент использует REST-интерфейс и</text>
+<text x="60" y="842.5" text-anchor="start" font-family="Arial" font-size="22">собственную учётную транзакцию. Серверный адаптер использует репозитории и преобразует DTO.</text>
+</svg>

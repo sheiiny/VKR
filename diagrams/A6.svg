@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма классов Компоненты адаптации и наблюдаемости</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма классов Компоненты адаптации и наблюдаемости</text>
+<rect x="45" y="85" width="470" height="152.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«interface»</text>
+<text x="280.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">IErpAdapter</text>
+<polyline points="45,138 515,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="166.0" text-anchor="start" font-family="Arial" font-size="21"></text>
+<polyline points="45,145.0 515,145.0" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="174.0" text-anchor="start" font-family="Arial" font-size="21">+ buildEventBatch(): EventBatch</text>
+<text x="57" y="200.25" text-anchor="start" font-family="Arial" font-size="21">+ buildStockSnapshot(): Snapshot</text>
+<text x="57" y="226.5" text-anchor="start" font-family="Arial" font-size="21">+ applyAck(ack): AckResponse</text>
+<rect x="570" y="85" width="470" height="179.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«component»</text>
+<text x="805.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ServerErpAdapter</text>
+<polyline points="570,138 1040,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ mappings: ToolCellMapping[]</text>
+<polyline points="570,171.25 1040,171.25" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="200.25" text-anchor="start" font-family="Arial" font-size="21">+ buildEventBatch(): EventBatch</text>
+<text x="582" y="226.5" text-anchor="start" font-family="Arial" font-size="21">+ buildStockSnapshot(): Snapshot</text>
+<text x="582" y="252.75" text-anchor="start" font-family="Arial" font-size="21">+ applyAck(ack): AckResponse</text>
+<rect x="1095" y="85" width="470" height="205.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«test client»</text>
+<text x="1330.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">DemoErpClient</text>
+<polyline points="1095,138 1565,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ processedEventIds: UUID[]</text>
+<text x="1107" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ accountingStock: map</text>
+<polyline points="1095,197.5 1565,197.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="226.5" text-anchor="start" font-family="Arial" font-size="21">+ startPolling(): void</text>
+<text x="1107" y="252.75" text-anchor="start" font-family="Arial" font-size="21">+ postOnce(event): ErpMovement</text>
+<text x="1107" y="279.0" text-anchor="start" font-family="Arial" font-size="21">+ retryAck(): AckResponse</text>
+<rect x="45" y="495" width="470" height="247.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ApiLogEntry</text>
+<polyline points="45,548 515,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ timestamp: DateTime UTC</text>
+<text x="57" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ traceId: string</text>
+<text x="57" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ eventId: UUID?; batchId: UUID?</text>
+<text x="57" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ clientId: string?</text>
+<text x="57" y="681.0" text-anchor="start" font-family="Arial" font-size="21">+ httpStatus: integer</text>
+<text x="57" y="707.25" text-anchor="start" font-family="Arial" font-size="21">+ durationMs: integer</text>
+<text x="57" y="733.5" text-anchor="start" font-family="Arial" font-size="21">+ resultCode: string</text>
+<rect x="570" y="495" width="470" height="142.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ErrorResponse</text>
+<polyline points="570,548 1040,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ code: string</text>
+<text x="582" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ message: string</text>
+<text x="582" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ traceId: string</text>
+<rect x="1095" y="495" width="470" height="169.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">HealthStatus</text>
+<polyline points="1095,548 1565,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ status: ready | degraded</text>
+<text x="1107" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ exchangeStore: ComponentState</text>
+<text x="1107" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ agentFreshness: ComponentState</text>
+<text x="1107" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ checkedAt: DateTime UTC</text>
+<polyline points="515,170 570,170" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polygon points="515,170 530,162 530,178" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="520" y="156.0" text-anchor="start" font-family="Arial" font-size="17"></text>
+<text x="565" y="195.0" text-anchor="end" font-family="Arial" font-size="17"></text>
+<polyline points="515,580 570,580" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="520" y="566.0" text-anchor="start" font-family="Arial" font-size="17">0..*</text>
+<text x="565" y="605.0" text-anchor="end" font-family="Arial" font-size="17">0..1</text>
+<polygon points="45,380 1537,380 1555,398 1555,460 45,460" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,380 1537,398 1555,398" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="409.0" text-anchor="start" font-family="Arial" font-size="21">DemoErpClient использует внешний REST API. Зависимости от серверного адаптера в корпоративном клиенте нет.</text>
+<polygon points="45,825 1537,825 1555,843 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,825 1537,843 1555,843" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="853.0" text-anchor="start" font-family="Arial" font-size="20">ServerErpAdapter реализует IErpAdapter; DemoErpClient — самостоятельный инициатор стенда. Линии зависимости обозначают использование, а не</text>
+<text x="55" y="878.0" text-anchor="start" font-family="Arial" font-size="20">исходящие вызовы сервера.</text>
+</svg>

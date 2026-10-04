@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма классов Сервисная идентификация и права</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма классов Сервисная идентификация и права</text>
+<rect x="45" y="85" width="470" height="231.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ServiceAccount</text>
+<polyline points="45,138 515,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ clientId: string {unique}</text>
+<text x="57" y="192.25" text-anchor="start" font-family="Arial" font-size="21">- secretHash: string</text>
+<text x="57" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ role: erp</text>
+<text x="57" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ isEnabled: boolean</text>
+<text x="57" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ cabinetIds: string[]</text>
+<polyline points="45,276.25 515,276.25" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="305.25" text-anchor="start" font-family="Arial" font-size="21">+ verifySecret(): boolean</text>
+<rect x="570" y="85" width="470" height="142.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Permission</text>
+<polyline points="570,138 1040,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ code: events:read | stock:read</text>
+<text x="582" y="192.25" text-anchor="start" font-family="Arial" font-size="21">              | events:ack</text>
+<text x="582" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ cabinetIds: string[]</text>
+<rect x="1095" y="85" width="470" height="247.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">JwtAccessToken</text>
+<polyline points="1095,138 1565,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ sub: clientId</text>
+<text x="1107" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ alg: RS256; kid: string</text>
+<text x="1107" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ iss: string; aud: string</text>
+<text x="1107" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ iat: epoch; exp: epoch</text>
+<text x="1107" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ jti: UUID</text>
+<text x="1107" y="297.25" text-anchor="start" font-family="Arial" font-size="21">+ role: erp</text>
+<text x="1107" y="323.5" text-anchor="start" font-family="Arial" font-size="21">+ permissions: string[]</text>
+<rect x="45" y="495" width="470" height="195.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">SigningKey</text>
+<polyline points="45,548 515,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ kid: string</text>
+<text x="57" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ algorithm: RS256</text>
+<text x="57" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ modulusBits: integer &gt;= 2048</text>
+<text x="57" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ state: active | verifyOnly</text>
+<text x="57" y="681.0" text-anchor="start" font-family="Arial" font-size="21">- privateKey: protected</text>
+<rect x="570" y="495" width="470" height="169.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">RevokedToken</text>
+<polyline points="570,548 1040,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ jti: UUID {PK}</text>
+<text x="582" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ revokedAt: DateTime UTC</text>
+<text x="582" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ expiresAt: DateTime UTC</text>
+<text x="582" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ reason: string</text>
+<rect x="1095" y="495" width="470" height="221.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">AuthAttempt</text>
+<polyline points="1095,548 1565,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ attemptId: UUID</text>
+<text x="1107" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ clientId: string</text>
+<text x="1107" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ timestamp: DateTime UTC</text>
+<text x="1107" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ success: boolean</text>
+<text x="1107" y="681.0" text-anchor="start" font-family="Arial" font-size="21">+ resultCode: string</text>
+<text x="1107" y="707.25" text-anchor="start" font-family="Arial" font-size="21">+ traceId: string</text>
+<polyline points="515,170 570,170" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="520" y="156.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="565" y="195.0" text-anchor="end" font-family="Arial" font-size="17">1..*</text>
+<polyline points="1040,170 1095,170" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1045" y="156.0" text-anchor="start" font-family="Arial" font-size="17">1..*</text>
+<text x="1090" y="195.0" text-anchor="end" font-family="Arial" font-size="17">0..*</text>
+<polyline points="195,495 195,465 1245,465 1245,332.75" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1249.5855788267213,342.74862324642373 1245,332.75 1240.4144211732787,342.74862324642373" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="510" y="451.0" text-anchor="start" font-family="Arial" font-size="18">SigningKey → JwtAccessToken: подпись / kid</text>
+<polygon points="45,825 1537,825 1555,843 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,825 1537,843 1555,843" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="853.0" text-anchor="start" font-family="Arial" font-size="20">JWT принадлежит сервисному клиенту ERP. Разрешение и область cabinetIds проверяются совместно. Секрет, закрытый ключ и полный токен не входят в</text>
+<text x="55" y="878.0" text-anchor="start" font-family="Arial" font-size="20">аудит.</text>
+</svg>

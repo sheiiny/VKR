@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML варианты использования и модель разграничения доступа</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML варианты использования и модель разграничения доступа</text>
+<rect x="260" y="95" width="1080" height="700" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="134.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Граница интеграционной системы MATRIX-TM — ERP</text>
+<ellipse cx="505.0" cy="235.0" rx="165.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="505.0" y="233.0" text-anchor="middle" font-family="Arial" font-size="23">Получить события</text>
+<ellipse cx="505.0" cy="400.0" rx="165.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="505.0" y="398.0" text-anchor="middle" font-family="Arial" font-size="23">Получить остатки</text>
+<ellipse cx="505.0" cy="565.0" rx="165.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="505.0" y="563.0" text-anchor="middle" font-family="Arial" font-size="23">Подтвердить обработку</text>
+<ellipse cx="1000.0" cy="380.0" rx="210.0" ry="50.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1000.0" y="373.0" text-anchor="middle" font-family="Arial" font-size="23">Проверить JWT и scope</text>
+<ellipse cx="995.0" cy="215.0" rx="175.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="995.0" y="213.0" text-anchor="middle" font-family="Arial" font-size="23">Посмотреть состояние</text>
+<ellipse cx="995.0" cy="580.0" rx="175.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="995.0" y="578.0" text-anchor="middle" font-family="Arial" font-size="23">Разобрать ошибку</text>
+<ellipse cx="640.0" cy="715.0" rx="190.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="640.0" y="713.0" text-anchor="middle" font-family="Arial" font-size="23">Настроить mapping</text>
+<ellipse cx="1080.0" cy="715.0" rx="190.0" ry="45.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1080.0" y="713.0" text-anchor="middle" font-family="Arial" font-size="23">Управлять клиентами</text>
+<text x="1080.0" y="741.75" text-anchor="middle" font-family="Arial" font-size="23">и ключами</text>
+<ellipse cx="120.0" cy="267.0" rx="12.0" ry="12.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="120,279 120,320" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="96,292 144,292" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="120,320 96,345" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="120,320 144,345" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="120" y="370.0" text-anchor="middle" font-family="Arial" font-size="21">ERP Client</text>
+<ellipse cx="1480.0" cy="217.0" rx="12.0" ry="12.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,229 1480,270" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,242 1504,242" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,270 1456,295" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,270 1504,295" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1480" y="320.0" text-anchor="middle" font-family="Arial" font-size="21">Оператор</text>
+<ellipse cx="1480.0" cy="547.0" rx="12.0" ry="12.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,559 1480,600" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,572 1504,572" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,600 1456,625" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1480,600 1504,625" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1480" y="650.0" text-anchor="middle" font-family="Arial" font-size="21">Администратор</text>
+<polyline points="144,300 340,235" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="144,300 340,400" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="144,300 340,565" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,250 1170,215" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,250 1170,580" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,585 1270,715" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1456,585 1390,585 1390,780 640,780 640,760" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="670,235 790,380" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="780.0924967461124,375.22073444196633 790,380 787.1579045204638,369.3735004218134" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="704" y="223.0" text-anchor="start" font-family="Arial" font-size="18">«include»</text>
+<polyline points="670,400 790,380" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="780.8912832983626,386.1669506280911 790,380 779.383554267719,377.1205764442286" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="704" y="388.0" text-anchor="start" font-family="Arial" font-size="18">«include»</text>
+<polyline points="670,565 790,380" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="788.4059612802928,390.88388903655647 790,380 780.711715051827,385.89302661809216" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="704" y="553.0" text-anchor="start" font-family="Arial" font-size="18">«include»</text>
+<polygon points="35,820 1547,820 1565,838 1565,920 35,920" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1547,820 1547,838 1565,838" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="45" y="850.0" text-anchor="start" font-family="Arial" font-size="22">ERP: events:read, stock:read, events:ack + cabinetIds. Оператор: просмотр и разбор ошибок. Администратор: настройки и ключи. Штатный</text>
+<text x="45" y="877.5" text-anchor="start" font-family="Arial" font-size="22">сотрудник шкафа не получает права сервиса ERP.</text>
+</svg>

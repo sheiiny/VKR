@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<title>UML последовательность физической операции и подготовки события</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML последовательность физической операции и подготовки события</text>
+<rect x="30.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="150.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Сотрудник</text>
+<polyline points="150.0,140 150.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="410.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="530.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Контроллер</text>
+<text x="530.0" y="122.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">MATRIX-TM</text>
+<polyline points="530.0,140 530.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="790.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Права и</text>
+<text x="910.0" y="122.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ячейка</text>
+<polyline points="910.0,140 910.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1170.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ITM</text>
+<polyline points="1290.0,140 1290.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1550.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1670.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Агент</text>
+<polyline points="1670.0,140 1670.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1930.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2050.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ExchangeStore</text>
+<polyline points="2050.0,140 2050.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="340.0" y="189.0" text-anchor="middle" font-family="Arial" font-size="24">1 Предъявить идентификатор;</text>
+<text x="340.0" y="219.0" text-anchor="middle" font-family="Arial" font-size="24">выбрать issue/return</text>
+<polyline points="150.0,227 530.0,227" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,227 520.0013767535762,231.58557882672133 520.0013767535762,222.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="227" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="283.0" text-anchor="middle" font-family="Arial" font-size="24">2 Проверить штатные права</text>
+<polyline points="530.0,291 910.0,291" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,291 900.0013767535762,295.5855788267213 900.0013767535762,286.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="291" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="347.0" text-anchor="middle" font-family="Arial" font-size="24">3 Разрешение или отказ</text>
+<polyline points="910.0,355 530.0,355" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,350.4144211732787 530.0,355 539.9986232464238,359.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<rect x="25" y="393" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="420.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">alt [штатный доступ разрешён]</text>
+<text x="720.0" y="473.0" text-anchor="middle" font-family="Arial" font-size="24">4 Разблокировать</text>
+<text x="720.0" y="503.0" text-anchor="middle" font-family="Arial" font-size="24">разрешённую ячейку</text>
+<polyline points="530.0,511 910.0,511" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,511 900.0013767535762,515.5855788267213 900.0013767535762,506.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="511" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="530.0" y="567.0" text-anchor="middle" font-family="Arial" font-size="24">5 Извлечь / вернуть инструмент; закрыть</text>
+<polyline points="150.0,575 910.0,575" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,575 900.0013767535762,579.5855788267213 900.0013767535762,570.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="575" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="631.0" text-anchor="middle" font-family="Arial" font-size="24">6 Подтвердить состояние и</text>
+<text x="720.0" y="661.0" text-anchor="middle" font-family="Arial" font-size="24">завершение</text>
+<polyline points="910.0,669 530.0,669" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,664.4144211732787 530.0,669 539.9986232464238,673.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="725.0" text-anchor="middle" font-family="Arial" font-size="24">7 Записать завершённую операцию</text>
+<polyline points="530.0,733 1290.0,733" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1290.0,733 1280.0013767535763,737.5855788267213 1280.0013767535763,728.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1285.0" y="733" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<polyline points="25,775 2175,775" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="40" y="804.0" text-anchor="start" font-family="Arial" font-size="24">[доступ запрещён]</text>
+<text x="340.0" y="843.0" text-anchor="middle" font-family="Arial" font-size="24">Сообщить отказ; ячейка</text>
+<text x="340.0" y="873.0" text-anchor="middle" font-family="Arial" font-size="24">остаётся закрытой</text>
+<polyline points="530.0,881 150.0,881" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,876.4144211732787 150.0,881 159.99862324642373,885.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<rect x="25" y="919" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="946.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">loop [опрос источника каждые 5 с; интеграционный агент не управляет приводами]</text>
+<text x="1480.0" y="999.0" text-anchor="middle" font-family="Arial" font-size="24">8 SELECT новые завершённые</text>
+<text x="1480.0" y="1029.0" text-anchor="middle" font-family="Arial" font-size="24">записи</text>
+<polyline points="1670.0,1037 1290.0,1037" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1290.0,1037 1299.9986232464237,1032.4144211732787 1299.9986232464237,1041.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1285.0" y="1037" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1480.0" y="1093.0" text-anchor="middle" font-family="Arial" font-size="24">9 sourcePosition, количество,</text>
+<text x="1480.0" y="1123.0" text-anchor="middle" font-family="Arial" font-size="24">локальное время</text>
+<polyline points="1290.0,1131 1670.0,1131" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1660.0013767535763,1135.5855788267213 1670.0,1131 1660.0013767535763,1126.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1860.0" y="1187.0" text-anchor="middle" font-family="Arial" font-size="24">10 Сохранить постоянный</text>
+<text x="1860.0" y="1217.0" text-anchor="middle" font-family="Arial" font-size="24">eventId, UTC, снимок; COMMIT</text>
+<polyline points="1670.0,1225 2050.0,1225" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2050.0,1225 2040.0013767535763,1229.5855788267213 2040.0013767535763,1220.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="2045.0" y="1225" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1860.0" y="1281.0" text-anchor="middle" font-family="Arial" font-size="24">11 Внутреннее сохранение</text>
+<text x="1860.0" y="1311.0" text-anchor="middle" font-family="Arial" font-size="24">подтверждено</text>
+<polyline points="2050.0,1319 1670.0,1319" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1679.9986232464237,1314.4144211732787 1670.0,1319 1679.9986232464237,1323.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,393 25,913 2175,913 2175,393" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,919 25,1361 2175,1361 2175,919" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="35" y="1432.0" text-anchor="start" font-family="Arial" font-size="24">Сплошная стрелка — вызов; пунктир — возврат; рамка — фрагмент взаимодействия</text>
+</svg>

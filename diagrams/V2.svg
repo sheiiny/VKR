@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<title>UML сквозной обмен Часть 2 События остатки и подтверждения</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML сквозной обмен Часть 2 События остатки и подтверждения</text>
+<rect x="30.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="150.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ExchangeStore</text>
+<polyline points="150.0,140 150.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="410.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="530.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">API</text>
+<polyline points="530.0,140 530.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="790.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">AuthService</text>
+<polyline points="910.0,140 910.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1170.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ERP Client</text>
+<polyline points="1290.0,140 1290.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1550.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1670.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Учётная БД ERP</text>
+<polyline points="1670.0,140 1670.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1930.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2050.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Аудит</text>
+<polyline points="2050.0,140 2050.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="25" y="171" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="198.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">loop [ERP опрашивает события; GET не подтверждает их обработку]</text>
+<text x="910.0" y="251.0" text-anchor="middle" font-family="Arial" font-size="24">10 GET /cabinets/{id}/events; Bearer JWT</text>
+<polyline points="1290.0,259 530.0,259" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,259 539.9986232464238,254.41442117327867 539.9986232464238,263.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="259" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="315.0" text-anchor="middle" font-family="Arial" font-size="24">11 Проверить подпись, exp,</text>
+<text x="720.0" y="345.0" text-anchor="middle" font-family="Arial" font-size="24">events:read, cabinetIds</text>
+<polyline points="530.0,353 910.0,353" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,353 900.0013767535762,357.5855788267213 900.0013767535762,348.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="353" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="409.0" text-anchor="middle" font-family="Arial" font-size="24">12 Выбрать available; создать</text>
+<text x="340.0" y="439.0" text-anchor="middle" font-family="Arial" font-size="24">batchId</text>
+<polyline points="530.0,447 150.0,447" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="150.0,447 159.99862324642373,442.4144211732787 159.99862324642373,451.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="145.0" y="447" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="503.0" text-anchor="middle" font-family="Arial" font-size="24">13 EventBatch, постоянные</text>
+<text x="340.0" y="533.0" text-anchor="middle" font-family="Arial" font-size="24">eventId, nextCursor</text>
+<polyline points="150.0,541 530.0,541" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="520.0013767535762,545.5855788267213 530.0,541 520.0013767535762,536.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="597.0" text-anchor="middle" font-family="Arial" font-size="24">14 200 EventBatch</text>
+<polyline points="530.0,605 1290.0,605" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1280.0013767535763,609.5855788267213 1290.0,605 1280.0013767535763,600.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1480.0" y="661.0" text-anchor="middle" font-family="Arial" font-size="24">15 BEGIN; проверить eventId;</text>
+<text x="1480.0" y="691.0" text-anchor="middle" font-family="Arial" font-size="24">проводка; COMMIT</text>
+<polyline points="1290.0,699 1670.0,699" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1670.0,699 1660.0013767535763,703.5855788267213 1660.0013767535763,694.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1665.0" y="699" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="755.0" text-anchor="middle" font-family="Arial" font-size="24">16 POST /events/ack: batchId, eventIds</text>
+<polyline points="1290.0,763 530.0,763" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,763 539.9986232464238,758.4144211732787 539.9986232464238,767.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="763" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="819.0" text-anchor="middle" font-family="Arial" font-size="24">17 Проверить пакет и scope;</text>
+<text x="340.0" y="849.0" text-anchor="middle" font-family="Arial" font-size="24">COMMIT ACK</text>
+<polyline points="530.0,857 150.0,857" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="150.0,857 159.99862324642373,852.4144211732787 159.99862324642373,861.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="145.0" y="857" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="913.0" text-anchor="middle" font-family="Arial" font-size="24">18 AckResponse: accepted / rejected</text>
+<polyline points="530.0,921 1290.0,921" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1280.0013767535763,925.5855788267213 1290.0,921 1280.0013767535763,916.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<rect x="25" y="959" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="986.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">opt [независимая сверка фактического и учётного остатков]</text>
+<text x="910.0" y="1039.0" text-anchor="middle" font-family="Arial" font-size="24">19 GET /cabinets/{id}/stock; stock:read</text>
+<polyline points="1290.0,1047 530.0,1047" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,1047 539.9986232464238,1042.4144211732787 539.9986232464238,1051.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="1047" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="1103.0" text-anchor="middle" font-family="Arial" font-size="24">20 StockSnapshot из ExchangeStore; asOf</text>
+<polyline points="530.0,1111 1290.0,1111" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1280.0013767535763,1115.5855788267213 1290.0,1111 1280.0013767535763,1106.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,171 25,953 2175,953 2175,171" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,959 25,1153 2175,1153 2175,959" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="35" y="1432.0" text-anchor="start" font-family="Arial" font-size="24">Сплошная стрелка — вызов; пунктир — возврат; рамка — фрагмент взаимодействия</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<title>UML повторная выдача события при потере ACK</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML повторная выдача события при потере ACK</text>
+<rect x="30.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="150.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ERP Client</text>
+<polyline points="150.0,140 150.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="505.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="625.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">API</text>
+<polyline points="625.0,140 625.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="980.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1100.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ExchangeStore</text>
+<polyline points="1100.0,140 1100.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1455.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1575.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Учётная БД ERP</text>
+<polyline points="1575.0,140 1575.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1930.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2050.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Аудит</text>
+<polyline points="2050.0,140 2050.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="25" y="171" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="198.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">Первое получение и проведение события</text>
+<text x="387.5" y="251.0" text-anchor="middle" font-family="Arial" font-size="24">1 GET events</text>
+<polyline points="150.0,259 625.0,259" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="625.0,259 615.0013767535762,263.5855788267213 615.0013767535762,254.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="620.0" y="259" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="862.5" y="315.0" text-anchor="middle" font-family="Arial" font-size="24">2 Read available</text>
+<polyline points="625.0,323 1100.0,323" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1100.0,323 1090.0013767535763,327.5855788267213 1090.0013767535763,318.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1095.0" y="323" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="387.5" y="379.0" text-anchor="middle" font-family="Arial" font-size="24">3 batchId B1; eventId E1</text>
+<polyline points="625.0,387 150.0,387" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,382.4144211732787 150.0,387 159.99862324642373,391.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="862.5" y="443.0" text-anchor="middle" font-family="Arial" font-size="24">4 Атомарно: E1 отсутствует → проводка → сохранить E1</text>
+<polyline points="150.0,451 1575.0,451" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1575.0,451 1565.0013767535763,455.5855788267213 1565.0013767535763,446.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1570.0" y="451" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="387.5" y="507.0" text-anchor="middle" font-family="Arial" font-size="24">5 ACK E1: тайм-аут; результат</text>
+<text x="387.5" y="537.0" text-anchor="middle" font-family="Arial" font-size="24">неизвестен</text>
+<polyline points="150.0,545 625.0,545" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="625.0,545 615.0013767535762,549.5855788267213 615.0013767535762,540.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="620.0" y="545" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<rect x="25" y="583" width="2150" height="38" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="38" y="610.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">loop [повтор после тайм-аута; постоянный eventId]</text>
+<text x="387.5" y="663.0" text-anchor="middle" font-family="Arial" font-size="24">6 GET events после восстановления</text>
+<text x="387.5" y="693.0" text-anchor="middle" font-family="Arial" font-size="24">связи</text>
+<polyline points="150.0,701 625.0,701" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="625.0,701 615.0013767535762,705.5855788267213 615.0013767535762,696.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="620.0" y="701" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="387.5" y="757.0" text-anchor="middle" font-family="Arial" font-size="24">7 E1 при неподтверждённом состоянии</text>
+<polyline points="625.0,765 150.0,765" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,760.4144211732787 150.0,765 159.99862324642373,769.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="862.5" y="821.0" text-anchor="middle" font-family="Arial" font-size="24">8 E1 уже проведён → второго движения нет</text>
+<polyline points="150.0,829 1575.0,829" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1575.0,829 1565.0013767535763,833.5855788267213 1565.0013767535763,824.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1570.0" y="829" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="387.5" y="885.0" text-anchor="middle" font-family="Arial" font-size="24">9 Повторить ACK с действующим</text>
+<text x="387.5" y="915.0" text-anchor="middle" font-family="Arial" font-size="24">batchId</text>
+<polyline points="150.0,923 625.0,923" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="625.0,923 615.0013767535762,927.5855788267213 615.0013767535762,918.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="620.0" y="923" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="862.5" y="979.0" text-anchor="middle" font-family="Arial" font-size="24">10 Идемпотентно сохранить</text>
+<text x="862.5" y="1009.0" text-anchor="middle" font-family="Arial" font-size="24">acknowledged</text>
+<polyline points="625.0,1017 1100.0,1017" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1100.0,1017 1090.0013767535763,1021.5855788267213 1090.0013767535763,1012.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1095.0" y="1017" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="387.5" y="1073.0" text-anchor="middle" font-family="Arial" font-size="24">11 AckResponse: E1 принят</text>
+<polyline points="625.0,1081 150.0,1081" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,1076.4144211732787 150.0,1081 159.99862324642373,1085.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,171 25,577 2175,577 2175,171" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="25,583 25,1123 2175,1123 2175,583" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="35" y="1432.0" text-anchor="start" font-family="Arial" font-size="24">Сплошная стрелка — вызов; пунктир — возврат; рамка — фрагмент взаимодействия</text>
+</svg>

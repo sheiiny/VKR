@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1350" viewBox="0 0 2200 1350">
+<title>BPMN 2.0 Целевой процесс Обмен запускает ERP</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">BPMN 2.0 Целевой процесс Обмен запускает ERP</text>
+<rect x="40" y="100" width="2120" height="280" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="60" y="136.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">MATRIX-TM и агент</text>
+<rect x="40" y="435" width="2120" height="145" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="60" y="471.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">Сервис обмена REST API — закрытый пул</text>
+<rect x="40" y="665" width="2120" height="360" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="60" y="701.0" text-anchor="start" font-family="Arial" font-size="24" font-weight="bold">ERP-система — инициатор</text>
+<ellipse cx="160.0" cy="250.0" rx="17.0" ry="17.0" fill="white" stroke="black" stroke-width="1.8"/>
+<rect x="250" y="207" width="340" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="420.0" y="246.0" text-anchor="middle" font-family="Arial" font-size="21">Зафиксировать операцию в ITM</text>
+<ellipse cx="269.0" cy="221.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="276.0,221.0 280.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="273.9497474683058,225.94974746830584 276.77817459305203,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="269.0,228.0 269.0,232.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="264.0502525316942,225.94974746830584 261.22182540694797,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="262.0,221.0 258.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="264.0502525316942,216.05025253169416 261.22182540694797,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="269.0,214.0 269.0,210.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="273.9497474683058,216.05025253169416 276.77817459305203,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<rect x="750" y="207" width="370" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="935.0" y="246.0" text-anchor="middle" font-family="Arial" font-size="21">Прочитать и нормализовать</text>
+<ellipse cx="769.0" cy="221.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="776.0,221.0 780.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="773.9497474683059,225.94974746830584 776.778174593052,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="769.0,228.0 769.0,232.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="764.0502525316941,225.94974746830584 761.221825406948,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="762.0,221.0 758.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="764.0502525316941,216.05025253169416 761.221825406948,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="769.0,214.0 769.0,210.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="773.9497474683059,216.05025253169416 776.778174593052,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1350" y="207" width="370" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1535.0" y="246.0" text-anchor="middle" font-family="Arial" font-size="21">Сохранить событие и снимок</text>
+<ellipse cx="1369.0" cy="221.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1376.0,221.0 1380.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1373.9497474683058,225.94974746830584 1376.778174593052,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1369.0,228.0 1369.0,232.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1364.0502525316942,225.94974746830584 1361.221825406948,228.77817459305203" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1362.0,221.0 1358.0,221.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1364.0502525316942,216.05025253169416 1361.221825406948,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1369.0,214.0 1369.0,210.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1373.9497474683058,216.05025253169416 1376.778174593052,213.22182540694797" fill="none" stroke="black" stroke-width="2"/>
+<ellipse cx="1930.0" cy="250.0" rx="17.0" ry="17.0" fill="white" stroke="black" stroke-width="3"/>
+<polyline points="177,250 250,250" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="250,250 240.00137675357627,254.58557882672133 240.00137675357627,245.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="590,250 750,250" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="750,250 740.0013767535762,254.58557882672133 740.0013767535762,245.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1120,250 1350,250" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1350,250 1340.0013767535763,254.58557882672133 1340.0013767535763,245.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1720,250 1913,250" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1913,250 1903.0013767535763,254.58557882672133 1903.0013767535763,245.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<ellipse cx="130.0" cy="850.0" rx="17.0" ry="17.0" fill="white" stroke="black" stroke-width="1.8"/>
+<ellipse cx="130.0" cy="850.0" rx="12.0" ry="12.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="130,841 130,850 137,850" fill="none" stroke="black" stroke-width="1.6"/>
+<rect x="215" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="350.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Получить JWT</text>
+<ellipse cx="234.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="241.0,821.0 245.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="238.94974746830584,825.9497474683059 241.77817459305203,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="234.0,828.0 234.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="229.05025253169416,825.9497474683059 226.22182540694797,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="227.0,821.0 223.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="229.05025253169416,816.0502525316941 226.22182540694797,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="234.0,814.0 234.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="238.94974746830584,816.0502525316941 241.77817459305203,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<rect x="545" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="680.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Запросить события</text>
+<ellipse cx="564.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="571.0,821.0 575.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="568.9497474683059,825.9497474683059 571.778174593052,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="564.0,828.0 564.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="559.0502525316941,825.9497474683059 556.221825406948,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="557.0,821.0 553.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="559.0502525316941,816.0502525316941 556.221825406948,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="564.0,814.0 564.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="568.9497474683059,816.0502525316941 571.778174593052,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<rect x="875" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1010.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Провести новые eventId</text>
+<text x="1010.0" y="872.25" text-anchor="middle" font-family="Arial" font-size="21">атомарно</text>
+<ellipse cx="894.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="901.0,821.0 905.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="898.9497474683059,825.9497474683059 901.778174593052,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="894.0,828.0 894.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="889.0502525316941,825.9497474683059 886.221825406948,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="887.0,821.0 883.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="889.0502525316941,816.0502525316941 886.221825406948,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="894.0,814.0 894.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="898.9497474683059,816.0502525316941 901.778174593052,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1205" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1340.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Подтвердить обработку</text>
+<text x="1340.0" y="872.25" text-anchor="middle" font-family="Arial" font-size="21">ACK</text>
+<ellipse cx="1224.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1231.0,821.0 1235.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1228.9497474683058,825.9497474683059 1231.778174593052,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1224.0,828.0 1224.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1219.0502525316942,825.9497474683059 1216.221825406948,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1217.0,821.0 1213.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1219.0502525316942,816.0502525316941 1216.221825406948,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1224.0,814.0 1224.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1228.9497474683058,816.0502525316941 1231.778174593052,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1535" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1670.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Запросить снимок</text>
+<text x="1670.0" y="872.25" text-anchor="middle" font-family="Arial" font-size="21">наличия</text>
+<ellipse cx="1554.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1561.0,821.0 1565.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1558.9497474683058,825.9497474683059 1561.778174593052,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1554.0,828.0 1554.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1549.0502525316942,825.9497474683059 1546.221825406948,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1547.0,821.0 1543.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1549.0502525316942,816.0502525316941 1546.221825406948,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1554.0,814.0 1554.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1558.9497474683058,816.0502525316941 1561.778174593052,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1865" y="807" width="270" height="85" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2000.0" y="846.0" text-anchor="middle" font-family="Arial" font-size="21">Сверить с учётом</text>
+<ellipse cx="1884.0" cy="821.0" rx="7.0" ry="7.0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1891.0,821.0 1895.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1888.9497474683058,825.9497474683059 1891.778174593052,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1884.0,828.0 1884.0,832.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1879.0502525316942,825.9497474683059 1876.221825406948,828.778174593052" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1877.0,821.0 1873.0,821.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1879.0502525316942,816.0502525316941 1876.221825406948,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1884.0,814.0 1884.0,810.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1888.9497474683058,816.0502525316941 1891.778174593052,813.221825406948" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="147,850 215,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="215,850 205.00137675357627,854.5855788267213 205.00137675357627,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="485,850 545,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="545,850 535.0013767535762,854.5855788267213 535.0013767535762,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="815,850 875,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="875,850 865.0013767535762,854.5855788267213 865.0013767535762,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1145,850 1205,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1205,850 1195.0013767535763,854.5855788267213 1195.0013767535763,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1475,850 1535,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1535,850 1525.0013767535763,854.5855788267213 1525.0013767535763,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1805,850 1865,850" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1865,850 1855.0013767535763,854.5855788267213 1855.0013767535763,845.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<ellipse cx="2090.0" cy="973.0" rx="17.0" ry="17.0" fill="white" stroke="black" stroke-width="3"/>
+<polyline points="2000,892 2045.0,892 2045.0,956 2090,956" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2090,956 2080.001376753576,960.5855788267213 2080.001376753576,951.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="280,807 280,580" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="284.5855788267213,589.9986232464238 280,580 275.4144211732787,589.9986232464238" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="280.0" cy="807.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">AuthRequest</text>
+<polyline points="420,580 420,807" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="415.4144211732787,797.0013767535762 420,807 424.5855788267213,797.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="420.0" cy="580.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="420.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">JWT</text>
+<polyline points="610,807 610,580" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="614.5855788267213,589.9986232464238 610,580 605.4144211732787,589.9986232464238" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="610.0" cy="807.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="610.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">EventQuery</text>
+<polyline points="750,580 750,807" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="745.4144211732787,797.0013767535762 750,807 754.5855788267213,797.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="750.0" cy="580.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="750.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">EventBatch</text>
+<polyline points="1270,807 1270,580" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1274.5855788267213,589.9986232464238 1270,580 1265.4144211732787,589.9986232464238" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1270.0" cy="807.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1270.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">EventAck</text>
+<polyline points="1410,580 1410,807" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1405.4144211732787,797.0013767535762 1410,807 1414.5855788267213,797.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1410.0" cy="580.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1410.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">AckResponse</text>
+<polyline points="1600,807 1600,580" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1604.5855788267213,589.9986232464238 1600,580 1595.4144211732787,589.9986232464238" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1600.0" cy="807.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1600.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">StockQuery</text>
+<polyline points="1740,580 1740,807" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1735.4144211732787,797.0013767535762 1740,807 1744.5855788267213,797.0013767535762" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1740.0" cy="580.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1740.0" y="686.5" text-anchor="middle" font-family="Arial" font-size="19">Snapshot</text>
+<polyline points="1535,292 1535,435" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1530.4144211732787,425.00137675357627 1535,435 1539.5855788267213,425.00137675357627" fill="none" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1535.0" cy="292.0" rx="4.0" ry="4.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1535.0" y="356.5" text-anchor="middle" font-family="Arial" font-size="19">ToolEvent + StockSnapshot</text>
+<polygon points="40,1090 2142,1090 2160,1108 2160,1280 40,1280" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="2142,1090 2142,1108 2160,1108" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="50" y="1122.0" text-anchor="start" font-family="Arial" font-size="24">Сплошной поток управляет процессом внутри пула. Пунктирный поток с пустым кружком передаёт сообщение между пулами. Таймер запускает ERP. GET не меняет учёт и не удаляет</text>
+<text x="50" y="1152.0" text-anchor="start" font-family="Arial" font-size="24">события; ACK следует за COMMIT ERP. Взаимодействие с закрытым пулом REST API раскрыто диаграммами последовательности В.1–В.2 и алгоритмом М.3.</text>
+</svg>

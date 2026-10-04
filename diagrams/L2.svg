@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML модели событий остатков подтверждений и ошибок</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML модели событий остатков подтверждений и ошибок</text>
+<rect x="45" y="100" width="470" height="174.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="280.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">EventBatch</text>
+<polyline points="45,153 515,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ batchId: UUID</text>
+<text x="57" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ items: ToolEvent [0..500]</text>
+<text x="57" y="237.0" text-anchor="start" font-family="Arial" font-size="22">+ nextCursor: string?</text>
+<text x="57" y="264.5" text-anchor="start" font-family="Arial" font-size="22">+ hasMore: boolean</text>
+<rect x="570" y="100" width="470" height="229.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="805.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">ToolEvent</text>
+<polyline points="570,153 1040,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ eventId: UUID {immutable}</text>
+<text x="582" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ cabinetId; cellNumber: string</text>
+<text x="582" y="237.0" text-anchor="start" font-family="Arial" font-size="22">+ toolCode; employeeCode: string</text>
+<text x="582" y="264.5" text-anchor="start" font-family="Arial" font-size="22">+ quantity: integer [1..100]</text>
+<text x="582" y="292.0" text-anchor="start" font-family="Arial" font-size="22">+ eventType: issue | return</text>
+<text x="582" y="319.5" text-anchor="start" font-family="Arial" font-size="22">+ occurredAt: DateTime UTC</text>
+<rect x="1095" y="100" width="470" height="174.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="1330.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">StockSnapshot</text>
+<polyline points="1095,153 1565,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ cabinetId: string</text>
+<text x="1107" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ asOf: DateTime UTC</text>
+<text x="1107" y="237.0" text-anchor="start" font-family="Arial" font-size="22">+ items: StockItem[]</text>
+<text x="1107" y="264.5" text-anchor="start" font-family="Arial" font-size="22">+ nextPageToken: string?</text>
+<rect x="45" y="490" width="470" height="174.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="280.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">StockItem</text>
+<polyline points="45,543 515,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ cellNumber; article: string</text>
+<text x="57" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ name; type; size: string?</text>
+<text x="57" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ quantity: integer [0..*]?</text>
+<text x="57" y="654.5" text-anchor="start" font-family="Arial" font-size="22">+ state: known | unknown</text>
+<rect x="570" y="490" width="470" height="174.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="805.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">AckResponse</text>
+<polyline points="570,543 1040,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ acceptedIds: UUID[]</text>
+<text x="582" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ rejectedIds: UUID[]</text>
+<text x="582" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ results: EventAckResult[]</text>
+<text x="582" y="654.5" text-anchor="start" font-family="Arial" font-size="22">+ traceId: string</text>
+<rect x="1095" y="490" width="470" height="184.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="1330.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">ErrorResponse</text>
+<polyline points="1095,543 1565,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ code: string</text>
+<text x="1107" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ message: string</text>
+<text x="1107" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ traceId: string</text>
+<polyline points="1095,632.5 1565,632.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="662.5" text-anchor="start" font-family="Arial" font-size="22">400 | 401 | 403 | 409 | 429 | 503</text>
+<polyline points="515,185 570,185" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="515,185 525.0,190.0 535.0,185.0 525.0,180.0" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="523" y="171.0" text-anchor="start" font-family="Arial" font-size="17">0..500</text>
+<polyline points="1330,274.0 1330,455 250,455 250,490" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1330,274.0 1325.0,284.0 1330.0,294.0 1335.0,284.0" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="690" y="447.0" text-anchor="start" font-family="Arial" font-size="19">StockSnapshot 1 — StockItem 0..*</text>
+<polygon points="45,820 1537,820 1555,838 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,820 1537,838 1555,838" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="849.0" text-anchor="start" font-family="Arial" font-size="21">Контракты — проектируемая модель. До реализации согласовать семантику курсора, частичный ACK, источник снимка и правила сверки. Инициатор</text>
+<text x="55" y="875.25" text-anchor="start" font-family="Arial" font-size="21">AuthRequest, EventQuery, StockQuery и EventAck — ERP.</text>
+</svg>

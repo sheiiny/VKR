@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<title>UML трассировка получения события системой ERP</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1100.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML трассировка получения события системой ERP</text>
+<rect x="30.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="150.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ERP Client</text>
+<polyline points="150.0,140 150.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="410.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="530.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">API</text>
+<polyline points="530.0,140 530.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="790.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Authorization</text>
+<polyline points="910.0,140 910.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1170.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Adapter</text>
+<polyline points="1290.0,140 1290.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1550.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1670.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">ExchangeStore</text>
+<polyline points="1670.0,140 1670.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="1930.0" y="60" width="240" height="80" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2050.0" y="92.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">AuditLog</text>
+<polyline points="2050.0,140 2050.0,1360" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="340.0" y="189.0" text-anchor="middle" font-family="Arial" font-size="24">1 GET events; X-Correlation-ID</text>
+<polyline points="150.0,197 530.0,197" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,197 520.0013767535762,201.58557882672133 520.0013767535762,192.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="525.0" y="197" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<polyline points="530.0,291 588.0,291 588.0,310 530.0,310" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530.0,310 539.9986232464238,305.4144211732787 539.9986232464238,314.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="538.0" y="258.0" text-anchor="start" font-family="Arial" font-size="24">2 Нормализовать или создать</text>
+<text x="538.0" y="288.0" text-anchor="start" font-family="Arial" font-size="24">traceId</text>
+<text x="720.0" y="347.0" text-anchor="middle" font-family="Arial" font-size="24">3 JWT; scope; cabinetIds</text>
+<polyline points="530.0,355 910.0,355" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="910.0,355 900.0013767535762,359.5855788267213 900.0013767535762,350.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="905.0" y="355" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="720.0" y="411.0" text-anchor="middle" font-family="Arial" font-size="24">4 Разрешение</text>
+<polyline points="910.0,419 530.0,419" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,414.4144211732787 530.0,419 539.9986232464238,423.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="475.0" text-anchor="middle" font-family="Arial" font-size="24">5 BuildEventBatch(cabinetId, cursor, limit)</text>
+<polyline points="530.0,483 1290.0,483" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1290.0,483 1280.0013767535763,487.5855788267213 1280.0013767535763,478.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1285.0" y="483" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1480.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="24">6 Read events; сохранить</text>
+<text x="1480.0" y="569.0" text-anchor="middle" font-family="Arial" font-size="24">состав batchId</text>
+<polyline points="1290.0,577 1670.0,577" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1670.0,577 1660.0013767535763,581.5855788267213 1660.0013767535763,572.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="1665.0" y="577" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="1480.0" y="633.0" text-anchor="middle" font-family="Arial" font-size="24">7 batchId + eventIds</text>
+<polyline points="1670.0,641 1290.0,641" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1299.9986232464237,636.4144211732787 1290.0,641 1299.9986232464237,645.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="910.0" y="697.0" text-anchor="middle" font-family="Arial" font-size="24">8 EventBatch</text>
+<polyline points="1290.0,705 530.0,705" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="539.9986232464238,700.4144211732787 530.0,705 539.9986232464238,709.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1290.0" y="761.0" text-anchor="middle" font-family="Arial" font-size="24">9 traceId, clientId, route, batchId, status, duration</text>
+<polyline points="530.0,769 2050.0,769" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2050.0,769 2040.0013767535763,773.5855788267213 2040.0013767535763,764.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="2045.0" y="769" width="10" height="22" rx="0" fill="#eeeeee" stroke="black" stroke-width="1.6"/>
+<text x="340.0" y="825.0" text-anchor="middle" font-family="Arial" font-size="24">10 200 + корреляционный</text>
+<text x="340.0" y="855.0" text-anchor="middle" font-family="Arial" font-size="24">заголовок</text>
+<polyline points="530.0,863 150.0,863" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="159.99862324642373,858.4144211732787 150.0,863 159.99862324642373,867.5855788267213" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="35" y="1432.0" text-anchor="start" font-family="Arial" font-size="24">Сплошная стрелка — вызов; пунктир — возврат; рамка — фрагмент взаимодействия</text>
+</svg>

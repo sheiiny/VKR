@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML модели запросов и защищённой аутентификации</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML модели запросов и защищённой аутентификации</text>
+<rect x="45" y="100" width="470" height="156.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="280.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">AuthRequest</text>
+<polyline points="45,153 515,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ clientId: string [1..64]</text>
+<text x="57" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ clientSecret: string [12..256]</text>
+<polyline points="45,215.0 515,215.0" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="245.0" text-anchor="start" font-family="Arial" font-size="22">POST /api/v1/auth/token</text>
+<rect x="570" y="100" width="470" height="184.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="805.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">AuthResponse</text>
+<polyline points="570,153 1040,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ accessToken: string</text>
+<text x="582" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ tokenType: Bearer</text>
+<text x="582" y="237.0" text-anchor="start" font-family="Arial" font-size="22">+ expiresIn: integer = 900</text>
+<polyline points="570,242.5 1040,242.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="272.5" text-anchor="start" font-family="Arial" font-size="22">HTTP 200</text>
+<rect x="1095" y="100" width="470" height="184.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="125.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="1330.0" y="149.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">EventQuery</text>
+<polyline points="1095,153 1565,153" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="182.0" text-anchor="start" font-family="Arial" font-size="22">+ cabinetId: string [1..64]</text>
+<text x="1107" y="209.5" text-anchor="start" font-family="Arial" font-size="22">+ after: cursor?</text>
+<text x="1107" y="237.0" text-anchor="start" font-family="Arial" font-size="22">+ limit: integer [1..500]</text>
+<polyline points="1095,242.5 1565,242.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="272.5" text-anchor="start" font-family="Arial" font-size="22">GET /cabinets/{id}/events</text>
+<rect x="45" y="490" width="470" height="184.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="280.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">StockQuery</text>
+<polyline points="45,543 515,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ cabinetId: string [1..64]</text>
+<text x="57" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ asOf: DateTime UTC?</text>
+<text x="57" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ pageToken: string?</text>
+<polyline points="45,632.5 515,632.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="662.5" text-anchor="start" font-family="Arial" font-size="22">GET /cabinets/{id}/stock</text>
+<rect x="570" y="490" width="470" height="184.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="805.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">EventAck</text>
+<polyline points="570,543 1040,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ batchId: UUID</text>
+<text x="582" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ eventIds: UUID [1..500]</text>
+<text x="582" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ result: processed</text>
+<polyline points="570,632.5 1040,632.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="662.5" text-anchor="start" font-family="Arial" font-size="22">POST /cabinets/{id}/events/ack</text>
+<rect x="1095" y="490" width="470" height="211.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="515.0" text-anchor="middle" font-family="Arial" font-size="20">«DTO»</text>
+<text x="1330.0" y="539.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">AccessContext</text>
+<polyline points="1095,543 1565,543" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="572.0" text-anchor="start" font-family="Arial" font-size="22">+ clientId: string</text>
+<text x="1107" y="599.5" text-anchor="start" font-family="Arial" font-size="22">+ permissions: string[]</text>
+<text x="1107" y="627.0" text-anchor="start" font-family="Arial" font-size="22">+ cabinetIds: string[]</text>
+<text x="1107" y="654.5" text-anchor="start" font-family="Arial" font-size="22">+ traceId: string</text>
+<polyline points="1095,660.0 1565,660.0" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="690.0" text-anchor="start" font-family="Arial" font-size="22">Validate JWT + permission + scope</text>
+<polyline points="515,185 570,185" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="560.0013767535762,189.58557882672133 570,185 560.0013767535762,180.41442117327867" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="540" y="169.0" text-anchor="middle" font-family="Arial" font-size="17">F05–F07</text>
+<polygon points="45,820 1537,820 1555,838 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,820 1537,838 1555,838" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="849.0" text-anchor="start" font-family="Arial" font-size="21">Контракты — проектируемая модель. До реализации согласовать семантику курсора, частичный ACK, источник снимка и правила сверки. Инициатор</text>
+<text x="55" y="875.25" text-anchor="start" font-family="Arial" font-size="21">AuthRequest, EventQuery, StockQuery и EventAck — ERP.</text>
+</svg>

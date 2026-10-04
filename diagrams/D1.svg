@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>Контекст системы автоматизации учёта движения инструмента</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">Контекст системы автоматизации учёта движения инструмента</text>
+<ellipse cx="800.0" cy="440.0" rx="300.0" ry="130.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="397.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P0 Система обмена</text>
+<text x="800" y="427.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">MATRIX-TM — ERP</text>
+<text x="800" y="457.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Объект автоматизации:</text>
+<text x="800" y="487.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">отражение выдачи и возврата в учёте</text>
+<rect x="40" y="155" width="340" height="140" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="210.0" y="188.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E1 MATRIX-TM / ITM</text>
+<text x="52" y="222.9" text-anchor="start" font-family="Arial" font-size="23">Факты операций</text>
+<text x="52" y="251.65" text-anchor="start" font-family="Arial" font-size="23">Фактическое наличие</text>
+<rect x="1220" y="155" width="340" height="140" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1390.0" y="188.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E2 ERP-система</text>
+<text x="1232" y="222.9" text-anchor="start" font-family="Arial" font-size="23">Инициатор запросов</text>
+<text x="1232" y="251.65" text-anchor="start" font-family="Arial" font-size="23">Корпоративное проведение</text>
+<rect x="40" y="650" width="340" height="140" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="210.0" y="683.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E3 Оператор</text>
+<text x="52" y="717.9" text-anchor="start" font-family="Arial" font-size="23">Состояние обмена</text>
+<text x="52" y="746.65" text-anchor="start" font-family="Arial" font-size="23">Разбор ошибок источника</text>
+<rect x="1220" y="650" width="340" height="140" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1390.0" y="683.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E4 Администратор</text>
+<text x="1232" y="717.9" text-anchor="start" font-family="Arial" font-size="23">Сервисные записи</text>
+<text x="1232" y="746.65" text-anchor="start" font-family="Arial" font-size="23">Mapping, ключи, настройки</text>
+<rect x="600" y="725" width="400" height="115" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="758.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E5 Мониторинг</text>
+<text x="612" y="792.9" text-anchor="start" font-family="Arial" font-size="23">Готовность и метрики</text>
+<polyline points="380,230 455,230 455,385 530,385" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="530,385 520.0013767535762,389.5855788267213 520.0013767535762,380.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="395" y="205.0" text-anchor="start" font-family="Arial" font-size="20">Операции, снимки</text>
+<polyline points="1220,205 1150,205 1150,365 1040,365" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1040,365 1049.9986232464237,360.4144211732787 1049.9986232464237,369.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1260" y="125.0" text-anchor="start" font-family="Arial" font-size="20">Auth / GET / ACK</text>
+<polyline points="1100,440 1180,440 1180,260 1220,260" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1220,260 1210.0013767535763,264.5855788267213 1210.0013767535763,255.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1235" y="350.0" text-anchor="start" font-family="Arial" font-size="20">JWT / события / stock / ACK result</text>
+<polyline points="380,710 440,710 440,490 525,490" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="525,490 515.0013767535762,494.5855788267213 515.0013767535762,485.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="385" y="610.0" text-anchor="start" font-family="Arial" font-size="20">Запрос состояния</text>
+<polyline points="570,520 470,520 470,755 380,755" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="380,755 389.99862324642373,750.4144211732787 389.99862324642373,759.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="400" y="820.0" text-anchor="start" font-family="Arial" font-size="20">Очередь и ошибки</text>
+<polyline points="1220,710 1160,710 1160,490 1075,490" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1075,490 1084.9986232464237,485.4144211732787 1084.9986232464237,494.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1200" y="600.0" text-anchor="start" font-family="Arial" font-size="20">Конфигурация</text>
+<polyline points="800,725 800,570" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,570 804.5855788267213,579.9986232464238 795.4144211732787,579.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="815" y="661.0" text-anchor="start" font-family="Arial" font-size="20">Health query / response</text>
+<polygon points="40,845 1542,845 1560,863 1560,915 40,915" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1542,845 1542,863 1560,863" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="50" y="875.0" text-anchor="start" font-family="Arial" font-size="22">В P0 отсутствуют команды открытия ячеек, выдачи инструмента по сети и исходящие запросы шкафа к ERP за остатками.</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML автомат жизненного цикла события и подтверждения</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML автомат жизненного цикла события и подтверждения</text>
+<ellipse cx="77.0" cy="167.0" rx="12.0" ry="12.0" fill="black" stroke="black" stroke-width="1.6"/>
+<rect x="155" y="110" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="325.0" y="145.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Локально подготовлено</text>
+<polyline points="155,178 495,178" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="167" y="209.0" text-anchor="start" font-family="Arial" font-size="21">eventId назначен один раз</text>
+<text x="167" y="235.25" text-anchor="start" font-family="Arial" font-size="21">Сохранена позиция источника</text>
+<rect x="655" y="110" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="825.0" y="145.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">available</text>
+<polyline points="655,178 995,178" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="667" y="209.0" text-anchor="start" font-family="Arial" font-size="21">GET не удаляет событие</text>
+<text x="667" y="235.25" text-anchor="start" font-family="Arial" font-size="21">Повторная выдача допустима</text>
+<rect x="1155" y="110" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1325.0" y="145.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">acknowledged</text>
+<polyline points="1155,178 1495,178" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1167" y="209.0" text-anchor="start" font-family="Arial" font-size="21">ACK после COMMIT ERP</text>
+<text x="1167" y="235.25" text-anchor="start" font-family="Arial" font-size="21">Результат ACK устойчив</text>
+<rect x="155" y="485" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="325.0" y="520.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">manualReview</text>
+<polyline points="155,553 495,553" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="167" y="584.0" text-anchor="start" font-family="Arial" font-size="21">Ошибка источника / mapping</text>
+<text x="167" y="610.25" text-anchor="start" font-family="Arial" font-size="21">Автоповтор приостановлен</text>
+<rect x="655" y="485" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="825.0" y="520.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Ожидание внутренней</text>
+<text x="825.0" y="548.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">записи</text>
+<polyline points="655,553 995,553" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="667" y="584.0" text-anchor="start" font-family="Arial" font-size="21">Сбой ExchangeStore</text>
+<text x="667" y="610.25" text-anchor="start" font-family="Arial" font-size="21">Локальное событие сохранено</text>
+<rect x="1155" y="485" width="340" height="150" rx="12" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1325.0" y="520.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Архивное хранение</text>
+<polyline points="1155,553 1495,553" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1167" y="584.0" text-anchor="start" font-family="Arial" font-size="21">Срок и порядок согласованы</text>
+<text x="1167" y="610.25" text-anchor="start" font-family="Arial" font-size="21">Нет очистки available</text>
+<polyline points="89,167 155,167" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="155,167 145.00137675357627,171.58557882672133 145.00137675357627,162.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="495,183 655,183" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="655,183 645.0013767535762,187.58557882672133 645.0013767535762,178.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="505" y="163.0" text-anchor="start" font-family="Arial" font-size="19">COMMIT store</text>
+<polyline points="995,183 1155,183" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1155,183 1145.0013767535763,187.58557882672133 1145.0013767535763,178.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1005" y="163.0" text-anchor="start" font-family="Arial" font-size="19">валидный ACK</text>
+<polyline points="325,260 325,485" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="325,485 320.4144211732787,475.00137675357627 329.5855788267213,475.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="335" y="384.0" text-anchor="start" font-family="Arial" font-size="19">ошибка данных</text>
+<polyline points="495,560 655,560" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="655,560 645.0013767535762,564.5855788267213 645.0013767535762,555.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="512" y="539.0" text-anchor="start" font-family="Arial" font-size="19">исправлено</text>
+<polyline points="825,485 825,260" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="825,260 829.5855788267213,269.99862324642373 820.4144211732787,269.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="835" y="384.0" text-anchor="start" font-family="Arial" font-size="19">повтор / COMMIT</text>
+<polyline points="1325,260 1325,485" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1325,485 1320.4144211732787,475.00137675357627 1329.5855788267213,475.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1335" y="384.0" text-anchor="start" font-family="Arial" font-size="19">политика хранения</text>
+<polyline points="495,230 565,230 565,560 655,560" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="655,560 645.0013767535762,564.5855788267213 645.0013767535762,555.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="500" y="324.0" text-anchor="start" font-family="Arial" font-size="19">сбой записи</text>
+<polyline points="730,110 730,70 925,70 925,110" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="925,110 920.4144211732787,100.00137675357627 929.5855788267213,100.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="800" y="67.0" text-anchor="middle" font-family="Arial" font-size="19">GET / тот же статус</text>
+<polyline points="1200,110 1200,70 1435,70 1435,110" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1435,110 1430.4144211732787,100.00137675357627 1439.5855788267213,100.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1320" y="67.0" text-anchor="middle" font-family="Arial" font-size="19">повтор ACK / тот же результат</text>
+<polyline points="995,220 1045,220 1045,295 895,295 895,260" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="895,260 899.5855788267213,269.99862324642373 890.4144211732787,269.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1045" y="287.0" text-anchor="start" font-family="Arial" font-size="19">тайм-аут / нет ACK</text>
+<polygon points="60,715 1522,715 1540,733 1540,885 60,885" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1522,715 1522,733 1540,733" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="70" y="746.0" text-anchor="start" font-family="Arial" font-size="23">Состояния показывают сквозной жизненный цикл факта; серверная запись ExchangeRecord имеет available либо acknowledged.</text>
+<text x="70" y="774.75" text-anchor="start" font-family="Arial" font-size="23">Тайм-аут GET, остановка ERP и получение пакета не переводят событие в acknowledged. Повторный ACK не создаёт нового</text>
+<text x="70" y="803.5" text-anchor="start" font-family="Arial" font-size="23">движения. Очистка неподтверждённых событий запрещена выбранной моделью.</text>
+</svg>

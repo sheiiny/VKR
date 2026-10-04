@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1350" viewBox="0 0 2300 1350">
+<title>DFD уровня 1 Сбор аутентификация выдача ACK и аудит</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1150.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">DFD уровня 1 Сбор аутентификация выдача ACK и аудит</text>
+<rect x="50" y="120" width="380" height="1030" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="240" y="159.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P1 Сбор и</text>
+<text x="240" y="189.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">нормализация</text>
+<rect x="505" y="120" width="380" height="1030" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="695" y="159.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P2 Аутентификация</text>
+<text x="695" y="189.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">сервисного клиента</text>
+<rect x="960" y="120" width="380" height="1030" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1150" y="159.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P3 Выдача событий</text>
+<text x="1150" y="189.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">и фактических остатков</text>
+<rect x="1415" y="120" width="380" height="1030" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1605" y="159.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P4 Приём ACK</text>
+<text x="1605" y="189.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">и идемпотентность</text>
+<rect x="1870" y="120" width="380" height="1030" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2060" y="159.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">P5 Аудит и</text>
+<text x="2060" y="189.0" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">диагностика</text>
+<polyline points="75,245 380,245" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="75,330 380,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="75,245 75,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="105,245 105,330" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="240" y="286.0" text-anchor="middle" font-family="Arial" font-size="23">D2 ExchangeStore</text>
+<polyline points="530,245 835,245" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="530,330 835,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="530,245 530,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="560,245 560,330" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="695" y="286.0" text-anchor="middle" font-family="Arial" font-size="23">D3 Credentials</text>
+<polyline points="985,245 1290,245" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="985,330 1290,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="985,245 985,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1015,245 1015,330" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1150" y="286.0" text-anchor="middle" font-family="Arial" font-size="23">D2 ExchangeStore</text>
+<polyline points="1440,245 1745,245" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1440,330 1745,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1440,245 1440,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1470,245 1470,330" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1605" y="286.0" text-anchor="middle" font-family="Arial" font-size="23">D2 ExchangeStore</text>
+<polyline points="1895,245 2200,245" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1895,330 2200,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1895,245 1895,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polyline points="1925,245 1925,330" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="2060" y="286.0" text-anchor="middle" font-family="Arial" font-size="23">D4 AuditLog</text>
+<rect x="105" y="970" width="270" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="240.0" y="1003.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E1 MATRIX-TM</text>
+<rect x="560" y="970" width="270" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="695.0" y="1003.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E2 ERP request</text>
+<rect x="1015" y="970" width="270" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1150.0" y="1003.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E2 ERP request</text>
+<rect x="1470" y="970" width="270" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1605.0" y="1003.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E2 ERP ACK</text>
+<rect x="1925" y="970" width="270" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2060.0" y="1003.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">E5 Monitoring</text>
+<rect x="105" y="530" width="270" height="140" rx="20" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="240" y="571.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">P1 Сбор и</text>
+<text x="240" y="599.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">нормализация</text>
+<rect x="560" y="530" width="270" height="140" rx="20" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="695" y="571.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">P2 Аутентификация</text>
+<text x="695" y="599.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">сервисного клиента</text>
+<rect x="1015" y="530" width="270" height="140" rx="20" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1150" y="571.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">P3 Выдача событий</text>
+<text x="1150" y="599.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">и фактических</text>
+<text x="1150" y="628.5" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">остатков</text>
+<rect x="1470" y="530" width="270" height="140" rx="20" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1605" y="571.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">P4 Приём ACK</text>
+<text x="1605" y="599.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">и идемпотентность</text>
+<rect x="1925" y="530" width="270" height="140" rx="20" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2060" y="571.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">P5 Аудит и</text>
+<text x="2060" y="599.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">диагностика</text>
+<rect x="100" y="780" width="280" height="85" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="240.0" y="812.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">D1 ITM</text>
+<text x="112" y="845.6" text-anchor="start" font-family="Arial" font-size="22">Завершённые записи</text>
+<polyline points="240,970 240,865" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="240,865 244.58557882672133,874.9986232464238 235.41442117327867,874.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="255" y="925.0" text-anchor="start" font-family="Arial" font-size="21">F01 Факт операции</text>
+<polyline points="240,780 240,670" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="240,670 244.58557882672133,679.9986232464238 235.41442117327867,679.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="255" y="725.0" text-anchor="start" font-family="Arial" font-size="21">F02 SELECT</text>
+<polyline points="240,530 240,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="240,330 244.58557882672133,339.99862324642373 235.41442117327867,339.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="255" y="404.0" text-anchor="start" font-family="Arial" font-size="21">F03 ToolEvent</text>
+<text x="255" y="430.25" text-anchor="start" font-family="Arial" font-size="21">F04 StockSnapshot</text>
+<polyline points="695,970 695,670" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="695,670 699.5855788267213,679.9986232464238 690.4144211732787,679.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="707" y="798.0" text-anchor="start" font-family="Arial" font-size="21">F05 AuthRequest</text>
+<polyline points="695,330 695,530" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="695,530 690.4144211732787,520.0013767535762 699.5855788267213,520.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="707" y="414.0" text-anchor="start" font-family="Arial" font-size="21">F06 Запись и scopes</text>
+<polyline points="560,600 530,600 530,1100 695,1100 695,1060" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="695,1060 699.5855788267213,1069.9986232464237 690.4144211732787,1069.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="573" y="1127.0" text-anchor="start" font-family="Arial" font-size="20">F07 JWT / Error</text>
+<polyline points="1150,970 1150,670" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1150,670 1154.5855788267213,679.9986232464238 1145.4144211732787,679.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1162" y="798.0" text-anchor="start" font-family="Arial" font-size="21">F08 StockQuery</text>
+<text x="1162" y="824.25" text-anchor="start" font-family="Arial" font-size="21">F09 EventQuery</text>
+<polyline points="1150,330 1150,530" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1150,530 1145.4144211732787,520.0013767535762 1154.5855788267213,520.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1162" y="414.0" text-anchor="start" font-family="Arial" font-size="21">F10 Снимок</text>
+<text x="1162" y="440.25" text-anchor="start" font-family="Arial" font-size="21">F11 Пакет</text>
+<polyline points="1015,600 985,600 985,1100 1150,1100 1150,1060" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1150,1060 1154.5855788267213,1069.9986232464237 1145.4144211732787,1069.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1028" y="1127.0" text-anchor="start" font-family="Arial" font-size="20">F12 Snapshot</text>
+<text x="1028" y="1152.0" text-anchor="start" font-family="Arial" font-size="20">F13 EventBatch</text>
+<polyline points="1605,970 1605,670" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1605,670 1609.5855788267213,679.9986232464238 1600.4144211732787,679.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1617" y="798.0" text-anchor="start" font-family="Arial" font-size="21">F14 EventAck</text>
+<polyline points="1605,530 1605,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1605,330 1609.5855788267213,339.99862324642373 1600.4144211732787,339.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1617" y="414.0" text-anchor="start" font-family="Arial" font-size="21">F15 Статус и ACK</text>
+<polyline points="1470,600 1440,600 1440,1100 1605,1100 1605,1060" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1605,1060 1609.5855788267213,1069.9986232464237 1600.4144211732787,1069.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1483" y="1127.0" text-anchor="start" font-family="Arial" font-size="20">F16 AckResponse</text>
+<polyline points="2060,970 2060,670" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,670 2064.5855788267213,679.9986232464238 2055.4144211732787,679.9986232464238" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2072" y="801.0" text-anchor="start" font-family="Arial" font-size="21">F22 HealthQuery</text>
+<polyline points="2060,530 2060,330" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,330 2064.5855788267213,339.99862324642373 2055.4144211732787,339.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2072" y="416.0" text-anchor="start" font-family="Arial" font-size="21">F21 Запись аудита</text>
+<polyline points="1925,600 1895,600 1895,1100 2060,1100 2060,1060" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,1060 2064.5855788267213,1069.9986232464237 2055.4144211732787,1069.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1938" y="1127.0" text-anchor="start" font-family="Arial" font-size="20">F23 HealthResponse</text>
+<polyline points="240,1150 240,1180 2060,1180 2060,1150" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,1150 2064.5855788267213,1159.9986232464237 2055.4144211732787,1159.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="255" y="1172.0" text-anchor="start" font-family="Arial" font-size="19">F17 Результат P1</text>
+<polyline points="695,1150 695,1204 2060,1204 2060,1150" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,1150 2064.5855788267213,1159.9986232464237 2055.4144211732787,1159.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="710" y="1196.0" text-anchor="start" font-family="Arial" font-size="19">F18 Результат P2</text>
+<polyline points="1150,1150 1150,1228 2060,1228 2060,1150" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,1150 2064.5855788267213,1159.9986232464237 2055.4144211732787,1159.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1165" y="1220.0" text-anchor="start" font-family="Arial" font-size="19">F19 Результат P3</text>
+<polyline points="1605,1150 1605,1252 2060,1252 2060,1150" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="2060,1150 2064.5855788267213,1159.9986232464237 2055.4144211732787,1159.9986232464237" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1620" y="1244.0" text-anchor="start" font-family="Arial" font-size="19">F20 Результат P4</text>
+<text x="45" y="1324.0" text-anchor="start" font-family="Arial" font-size="24">DFD: прямоугольник — внешняя сущность; скруглённый блок — процесс; открытый блок — хранилище; стрелка — данные</text>
+</svg>

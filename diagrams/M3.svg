@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500">
+<title>Схема алгоритма цикла ERP по ГОСТ 19.701-90</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">Схема алгоритма цикла ERP по ГОСТ 19.701-90</text>
+<rect x="615" y="65" width="370" height="65" rx="32" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="104.0" text-anchor="middle" font-family="Arial" font-size="24">Запуск по расписанию</text>
+<rect x="530" y="170" width="540" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="203.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Получить или обновить JWT ERP</text>
+<rect x="530" y="315" width="540" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="348.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">GET events с cabinetId и курсором</text>
+<polygon points="800,455 1040,525 800,595 560,525" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="519.0" text-anchor="middle" font-family="Arial" font-size="22">Ответ успешен?</text>
+<rect x="530" y="655" width="540" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="688.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Атомарно проверить eventId и провести</text>
+<text x="800.0" y="716.75" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">движение</text>
+<polygon points="800,800 1040,870 800,940 560,870" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="864.0" text-anchor="middle" font-family="Arial" font-size="22">COMMIT выполнен?</text>
+<rect x="530" y="1000" width="540" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="1033.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">POST ACK проведённых eventIds</text>
+<rect x="530" y="1145" width="540" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800.0" y="1178.0" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold">Сохранить результат и продолжить опрос</text>
+<rect x="615" y="1320" width="370" height="65" rx="32" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="800" y="1359.0" text-anchor="middle" font-family="Arial" font-size="24">Конец текущего цикла</text>
+<polyline points="800,130 800,170" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,170 795.4144211732787,160.00137675357627 804.5855788267213,160.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,260 800,315" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,315 795.4144211732787,305.00137675357627 804.5855788267213,305.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,405 800,455" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,455 795.4144211732787,445.00137675357627 804.5855788267213,445.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,595 800,655" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,655 795.4144211732787,645.0013767535762 804.5855788267213,645.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,745 800,800" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,800 795.4144211732787,790.0013767535762 804.5855788267213,790.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,940 800,1000" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,1000 795.4144211732787,990.0013767535762 804.5855788267213,990.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,1090 800,1145" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,1145 795.4144211732787,1135.0013767535763 804.5855788267213,1135.0013767535763" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="800,1235 800,1320" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,1320 795.4144211732787,1310.0013767535763 804.5855788267213,1310.0013767535763" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="817" y="631.0" text-anchor="start" font-family="Arial" font-size="20">да</text>
+<text x="817" y="976.0" text-anchor="start" font-family="Arial" font-size="20">да</text>
+<rect x="1130" y="475" width="410" height="110" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1335.0" y="506.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Обработать код ошибки</text>
+<text x="1142" y="538.3" text-anchor="start" font-family="Arial" font-size="21">401 → обновить JWT</text>
+<text x="1142" y="564.55" text-anchor="start" font-family="Arial" font-size="21">403/409 → разбор</text>
+<rect x="65" y="835" width="390" height="125" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="260.0" y="866.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Не отправлять ACK</text>
+<text x="77" y="898.3" text-anchor="start" font-family="Arial" font-size="21">Нет бизнес-подтверждения</text>
+<text x="77" y="924.55" text-anchor="start" font-family="Arial" font-size="21">Повтор / ручной разбор</text>
+<polyline points="1040,525 1130,525" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1130,525 1120.0013767535763,529.5855788267213 1120.0013767535763,520.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1085" y="514.0" text-anchor="middle" font-family="Arial" font-size="20">нет</text>
+<polyline points="560,870 455,870" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="455,870 464.99862324642373,865.4144211732787 464.99862324642373,874.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="505" y="858.0" text-anchor="middle" font-family="Arial" font-size="20">нет</text>
+<polyline points="1335,585 1335,1255 800,1255 800,1320" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,1320 795.4144211732787,1310.0013767535763 804.5855788267213,1310.0013767535763" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="260,960 260,1255 800,1255" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="800,1255 790.0013767535762,1259.5855788267213 790.0013767535762,1250.4144211732787" fill="black" stroke="black" stroke-width="1.6"/>
+<polygon points="65,1390 1522,1390 1540,1408 1540,1470 65,1470" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1522,1390 1522,1408 1540,1408" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="75" y="1420.0" text-anchor="start" font-family="Arial" font-size="22">Тайм-аут ACK → повтор безопасен. eventId и occurredAt сохраняются. Повтор GET не означает повторную проводку.</text>
+</svg>

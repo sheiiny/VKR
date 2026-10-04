@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма классов Шкаф и исходные операции</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма классов Шкаф и исходные операции</text>
+<rect x="45" y="85" width="470" height="205.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Cabinet</text>
+<polyline points="45,138 515,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ cabinetId: string [1..64]</text>
+<text x="57" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ name: string</text>
+<text x="57" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ operatingMode: CabinetMode</text>
+<text x="57" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ lastSeenAtUtc: DateTime?</text>
+<polyline points="45,250.0 515,250.0" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="279.0" text-anchor="start" font-family="Arial" font-size="21">+ getCells(): CabinetCell[]</text>
+<rect x="570" y="85" width="470" height="179.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">CabinetCell</text>
+<polyline points="570,138 1040,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ cellNumber: string [1..64]</text>
+<text x="582" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ state: CellState</text>
+<text x="582" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ label: string</text>
+<polyline points="570,223.75 1040,223.75" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="252.75" text-anchor="start" font-family="Arial" font-size="21">+ readNativeState(): CellState</text>
+<rect x="1095" y="85" width="470" height="221.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">NativeCabinetOperation</text>
+<polyline points="1095,138 1565,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ sourcePosition: long</text>
+<text x="1107" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ employeeCode: string</text>
+<text x="1107" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ toolCode: string</text>
+<text x="1107" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ operationType: issue | return</text>
+<text x="1107" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ quantity: integer [1..100]</text>
+<text x="1107" y="297.25" text-anchor="start" font-family="Arial" font-size="21">+ occurredAtLocal: DateTime</text>
+<rect x="45" y="495" width="470" height="169.0" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Employee</text>
+<polyline points="45,548 515,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ employeeCode: string [1..64]</text>
+<text x="57" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ fullName: string</text>
+<text x="57" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ departmentCode: string</text>
+<text x="57" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ isActive: boolean</text>
+<rect x="570" y="495" width="470" height="221.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">EmployeeAccess</text>
+<polyline points="570,548 1040,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ accessId: UUID</text>
+<text x="582" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ cabinetId: string</text>
+<text x="582" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ cellNumber: string?</text>
+<text x="582" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ validFrom: DateTime</text>
+<text x="582" y="681.0" text-anchor="start" font-family="Arial" font-size="21">+ validTo: DateTime?</text>
+<text x="582" y="707.25" text-anchor="start" font-family="Arial" font-size="21">+ status: AccessStatus</text>
+<rect x="1095" y="495" width="470" height="152.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">EmployeeRole</text>
+<polyline points="1095,548 1565,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ roleCode: string</text>
+<text x="1107" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ name: string</text>
+<polyline points="1095,607.5 1565,607.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="636.5" text-anchor="start" font-family="Arial" font-size="21">+ definesNativeRights(): boolean</text>
+<polyline points="515,170 570,170" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="515,170 525.0,175.0 535.0,170.0 525.0,165.0" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="520" y="156.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="565" y="195.0" text-anchor="end" font-family="Arial" font-size="17">1..*</text>
+<polyline points="1040,170 1095,170" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1045" y="156.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="1090" y="195.0" text-anchor="end" font-family="Arial" font-size="17">0..*</text>
+<polyline points="515,580 570,580" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="520" y="566.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="565" y="605.0" text-anchor="end" font-family="Arial" font-size="17">0..*</text>
+<polyline points="1040,580 1095,580" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1045" y="566.0" text-anchor="start" font-family="Arial" font-size="17">0..*</text>
+<text x="1090" y="605.0" text-anchor="end" font-family="Arial" font-size="17">1</text>
+<polyline points="225,290.25 225,465 750,465 750,495" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="270" y="451.0" text-anchor="start" font-family="Arial" font-size="18">Cabinet 1 — EmployeeAccess 0..*</text>
+<polygon points="45,825 1537,825 1555,843 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,825 1537,843 1555,843" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="853.0" text-anchor="start" font-family="Arial" font-size="20">Права сотрудника проверяет штатное ПО MATRIX-TM. Сервисная учётная запись ERP не предоставляет человеку доступ к ячейке.</text>
+</svg>

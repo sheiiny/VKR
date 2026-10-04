@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма развёртывания и доверительных границ</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма развёртывания и доверительных границ</text>
+<rect x="47" y="78" width="485" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="35,90 47,78" fill="none" stroke="black" stroke-width="1"/>
+<polyline points="520,90 532,78" fill="none" stroke="black" stroke-width="1"/>
+<rect x="35" y="90" width="485" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="55" y="127.0" text-anchor="start" font-family="Arial" font-size="22" font-weight="bold">«device» Узел MATRIX-TM</text>
+<rect x="567" y="78" width="505" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="555,90 567,78" fill="none" stroke="black" stroke-width="1"/>
+<polyline points="1060,90 1072,78" fill="none" stroke="black" stroke-width="1"/>
+<rect x="555" y="90" width="505" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="575" y="127.0" text-anchor="start" font-family="Arial" font-size="22" font-weight="bold">«node» Сервер интеграции</text>
+<rect x="1107" y="78" width="470" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1095,90 1107,78" fill="none" stroke="black" stroke-width="1"/>
+<polyline points="1565,90 1577,78" fill="none" stroke="black" stroke-width="1"/>
+<rect x="1095" y="90" width="470" height="745" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1115" y="127.0" text-anchor="start" font-family="Arial" font-size="22" font-weight="bold">«node» Корпоративный ERP</text>
+<rect x="65" y="165" width="425" height="115" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="277.5" y="197.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">«executionEnvironment»</text>
+<text x="277.5" y="224.5" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Контроллер и штатное ПО</text>
+<text x="77" y="259.2" text-anchor="start" font-family="Arial" font-size="22">Права, приводы, датчики</text>
+<rect x="65" y="357" width="425" height="71" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="277.5" cy="428.0" rx="212.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="277.5" cy="357.0" rx="212.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="277.5" y="389.0" text-anchor="middle" font-family="Arial" font-size="20">ITM — SQL Server</text>
+<text x="277.5" y="414.0" text-anchor="middle" font-family="Arial" font-size="20">Операции и наличие</text>
+<rect x="65" y="515" width="425" height="140" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="277.5" y="547.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">«artifact»</text>
+<text x="277.5" y="574.5" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">ToolCabinetAgent</text>
+<text x="77" y="609.2" text-anchor="start" font-family="Arial" font-size="22">Read-only SELECT; UTC; UUID</text>
+<text x="77" y="636.7" text-anchor="start" font-family="Arial" font-size="22">Локальная устойчивая очередь</text>
+<rect x="585" y="182" width="445" height="76" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="807.5" cy="258.0" rx="222.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="807.5" cy="182.0" rx="222.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="807.5" y="214.0" text-anchor="middle" font-family="Arial" font-size="20">ExchangeStore</text>
+<text x="807.5" y="239.0" text-anchor="middle" font-family="Arial" font-size="20">События, снимки, пакеты, ACK</text>
+<rect x="585" y="355" width="445" height="120" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="807.5" y="387.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">«artifact»</text>
+<text x="807.5" y="414.5" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">ToolCabinetApi</text>
+<text x="597" y="449.2" text-anchor="start" font-family="Arial" font-size="22">HTTPS; events; stock; ack</text>
+<rect x="585" y="550" width="200" height="125" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="685.0" y="581.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">«artifact»</text>
+<text x="685.0" y="607.25" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">AuthService</text>
+<text x="597" y="640.6" text-anchor="start" font-family="Arial" font-size="21">RS256; scope</text>
+<rect x="810" y="550" width="220" height="125" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="920.0" y="581.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">«artifact»</text>
+<text x="920.0" y="607.25" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">AuditLog</text>
+<text x="822" y="640.6" text-anchor="start" font-family="Arial" font-size="21">traceId; метрики</text>
+<rect x="1125" y="165" width="410" height="95" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="197.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">«artifact»</text>
+<text x="1330.0" y="224.5" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Планировщик ERP</text>
+<text x="1137" y="259.2" text-anchor="start" font-family="Arial" font-size="22">Цикл опроса</text>
+<rect x="1125" y="355" width="410" height="130" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="387.0" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">«artifact»</text>
+<text x="1330.0" y="414.5" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">ERP Integration Client</text>
+<text x="1137" y="449.2" text-anchor="start" font-family="Arial" font-size="22">GET events / GET stock</text>
+<text x="1137" y="476.7" text-anchor="start" font-family="Arial" font-size="22">POST ACK после COMMIT</text>
+<rect x="1125" y="637" width="410" height="81" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1330.0" cy="718.0" rx="205.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1330.0" cy="637.0" rx="205.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="669.0" text-anchor="middle" font-family="Arial" font-size="20">Учётная БД ERP</text>
+<text x="1330.0" y="694.0" text-anchor="middle" font-family="Arial" font-size="20">Проводки и обработанные eventId</text>
+<polyline points="277,280 277,340" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="277,340 272.4144211732787,330.00137675357627 281.5855788267213,330.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="277,515 277,445" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="277,445 281.5855788267213,454.99862324642373 272.4144211732787,454.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="490,580 535,580 535,215 585,215" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="585,215 575.0013767535762,219.58557882672133 575.0013767535762,210.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="807,355 807,275" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="807,275 811.5855788267213,284.99862324642373 802.4144211732787,284.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="685,550 685,475" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="685,475 689.5855788267213,484.99862324642373 680.4144211732787,484.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1330,260 1330,355" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1330,355 1325.4144211732787,345.00137675357627 1334.5855788267213,345.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1330,485 1330,620" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1330,620 1325.4144211732787,610.0013767535762 1334.5855788267213,610.0013767535762" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1125,412 1030,412" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1030,412 1039.9986232464237,407.4144211732787 1039.9986232464237,416.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1074" y="335.0" text-anchor="middle" font-family="Arial" font-size="20">HTTPS</text>
+<polyline points="1030,445 1125,445" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="1115.0013767535763,449.5855788267213 1125,445 1115.0013767535763,440.4144211732787" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="35,855 1547,855 1565,873 1565,925 35,925" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1547,855 1547,873 1565,873" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="45" y="884.0" text-anchor="start" font-family="Arial" font-size="21">Граница: штатное управление ячейками не входит в REST API. Агент не вызывает ERP. Внутреннее сохранение и внешний опрос — разные каналы.</text>
+</svg>

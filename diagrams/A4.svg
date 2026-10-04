@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+<title>UML диаграмма классов Номенклатура остатки и корпоративный учёт</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="800.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">UML диаграмма классов Номенклатура остатки и корпоративный учёт</text>
+<rect x="45" y="85" width="470" height="195.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">Tool</text>
+<polyline points="45,138 515,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ toolCode: string [1..64]</text>
+<text x="57" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ erpArticle: string</text>
+<text x="57" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ name: string [1..200]</text>
+<text x="57" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ size: string?</text>
+<text x="57" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ type: string?</text>
+<rect x="570" y="85" width="470" height="247.75" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ToolCellMapping</text>
+<polyline points="570,138 1040,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ mappingId: UUID</text>
+<text x="582" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ cabinetId: string</text>
+<text x="582" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ cellNumber: string</text>
+<text x="582" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ toolCode: string</text>
+<text x="582" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ erpArticle: string</text>
+<text x="582" y="297.25" text-anchor="start" font-family="Arial" font-size="21">+ validFrom: DateTime</text>
+<text x="582" y="323.5" text-anchor="start" font-family="Arial" font-size="21">+ validTo: DateTime?</text>
+<rect x="1095" y="85" width="470" height="195.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="109.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="133.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">StockSnapshot</text>
+<polyline points="1095,138 1565,138" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="166.0" text-anchor="start" font-family="Arial" font-size="21">+ snapshotId: UUID</text>
+<text x="1107" y="192.25" text-anchor="start" font-family="Arial" font-size="21">+ cabinetId: string</text>
+<text x="1107" y="218.5" text-anchor="start" font-family="Arial" font-size="21">+ asOf: DateTime UTC</text>
+<text x="1107" y="244.75" text-anchor="start" font-family="Arial" font-size="21">+ items: ToolStockItem[]</text>
+<text x="1107" y="271.0" text-anchor="start" font-family="Arial" font-size="21">+ nextPageToken: string?</text>
+<rect x="45" y="495" width="470" height="221.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="280.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="280.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ToolStockItem</text>
+<polyline points="45,548 515,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="57" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ toolCode: string</text>
+<text x="57" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ erpArticle: string</text>
+<text x="57" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ cellNumber: string</text>
+<text x="57" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ quantity: integer [0..*]?</text>
+<text x="57" y="681.0" text-anchor="start" font-family="Arial" font-size="21">+ state: known | unknown</text>
+<text x="57" y="707.25" text-anchor="start" font-family="Arial" font-size="21">+ asOf: DateTime UTC</text>
+<rect x="570" y="495" width="470" height="205.25" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="805.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="805.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ERPSystem</text>
+<polyline points="570,548 1040,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ ownsAccountingStock: boolean</text>
+<text x="582" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ processedEventIds: UUID[]</text>
+<polyline points="570,607.5 1040,607.5" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="582" y="636.5" text-anchor="start" font-family="Arial" font-size="21">+ pollEvents(): EventBatch</text>
+<text x="582" y="662.75" text-anchor="start" font-family="Arial" font-size="21">+ postOnce(event): ErpMovement</text>
+<text x="582" y="689.0" text-anchor="start" font-family="Arial" font-size="21">+ sendAck(ack): AckResponse</text>
+<rect x="1095" y="495" width="470" height="221.5" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1330.0" y="519.0" text-anchor="middle" font-family="Arial" font-size="19">«entity»</text>
+<text x="1330.0" y="543.0" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold">ErpMovement</text>
+<polyline points="1095,548 1565,548" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="1107" y="576.0" text-anchor="start" font-family="Arial" font-size="21">+ erpOperationId: string</text>
+<text x="1107" y="602.25" text-anchor="start" font-family="Arial" font-size="21">+ eventId: UUID {unique}</text>
+<text x="1107" y="628.5" text-anchor="start" font-family="Arial" font-size="21">+ article: string</text>
+<text x="1107" y="654.75" text-anchor="start" font-family="Arial" font-size="21">+ quantity: integer</text>
+<text x="1107" y="681.0" text-anchor="start" font-family="Arial" font-size="21">+ movementType: issue | return</text>
+<text x="1107" y="707.25" text-anchor="start" font-family="Arial" font-size="21">+ postedAt: DateTime UTC</text>
+<polyline points="515,170 570,170" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="520" y="156.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="565" y="195.0" text-anchor="end" font-family="Arial" font-size="17">0..*</text>
+<polyline points="1040,580 1095,580" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1040,580 1050.0,585.0 1060.0,580.0 1050.0,575.0" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1045" y="566.0" text-anchor="start" font-family="Arial" font-size="17">1</text>
+<text x="1090" y="605.0" text-anchor="end" font-family="Arial" font-size="17">0..*</text>
+<polyline points="1245,280.25 1245,465 195,465 195,495" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1245,280.25 1240.0,290.25 1245.0,300.25 1250.0,290.25" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="510" y="451.0" text-anchor="start" font-family="Arial" font-size="18">StockSnapshot 1 — ToolStockItem 0..*</text>
+<polygon points="45,825 1537,825 1555,843 1555,910 45,910" fill="white" stroke="black" stroke-width="1.6"/>
+<polyline points="1537,825 1537,843 1555,843" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="55" y="853.0" text-anchor="start" font-family="Arial" font-size="20">StockSnapshot содержит фактическое наличие по данным шкафа и время asOf. Unknown не приравнивается к нулю. Проводка и eventId фиксируются в одной</text>
+<text x="55" y="878.0" text-anchor="start" font-family="Arial" font-size="20">транзакции ERP.</text>
+</svg>

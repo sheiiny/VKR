@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<title>Компоненты защищённого обмена MATRIX-TM и ERP</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="600.0" y="47.0" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold">Компоненты защищённого обмена MATRIX-TM и ERP</text>
+<rect x="25" y="80" width="345" height="565" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="25" y="80" width="157.9765625" height="34" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="37" y="104.0" text-anchor="start" font-family="Arial" font-size="21" font-weight="bold">MATRIX-TM</text>
+<rect x="55" y="145" width="285" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="197.5" y="180.0" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">Штатное ПО</text>
+<text x="67" y="217.5" text-anchor="start" font-family="Arial" font-size="25">Выдача и возврат</text>
+<rect x="55" y="307" width="285" height="61" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="197.5" cy="368.0" rx="142.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="197.5" cy="307.0" rx="142.5" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="197.5" y="339.0" text-anchor="middle" font-family="Arial" font-size="20">ITM</text>
+<text x="197.5" y="364.0" text-anchor="middle" font-family="Arial" font-size="20">Источник фактов</text>
+<rect x="55" y="445" width="285" height="125" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="197.5" y="480.0" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">ToolCabinetAgent</text>
+<text x="67" y="517.5" text-anchor="start" font-family="Arial" font-size="25">SELECT read-only</text>
+<text x="67" y="548.75" text-anchor="start" font-family="Arial" font-size="25">События и снимки</text>
+<rect x="420" y="80" width="365" height="565" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="420" y="80" width="199.984375" height="34" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="432" y="104.0" text-anchor="start" font-family="Arial" font-size="21" font-weight="bold">Сервер обмена</text>
+<rect x="455" y="172" width="290" height="61" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="600.0" cy="233.0" rx="145.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="600.0" cy="172.0" rx="145.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="600.0" y="204.0" text-anchor="middle" font-family="Arial" font-size="20">ExchangeStore</text>
+<rect x="455" y="315" width="290" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="600.0" y="350.0" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">ToolCabinetApi</text>
+<text x="467" y="387.5" text-anchor="start" font-family="Arial" font-size="25">REST для ERP</text>
+<rect x="455" y="485" width="290" height="90" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="600.0" y="520.0" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">AuthService</text>
+<text x="467" y="557.5" text-anchor="start" font-family="Arial" font-size="25">JWT и permissions</text>
+<rect x="835" y="80" width="340" height="565" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<rect x="835" y="80" width="285.9921875" height="34" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="847" y="104.0" text-anchor="start" font-family="Arial" font-size="21" font-weight="bold">Корпоративный контур</text>
+<rect x="870" y="160" width="270" height="110" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1005.0" y="195.0" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">ERP Client</text>
+<text x="882" y="232.5" text-anchor="start" font-family="Arial" font-size="25">Инициатор запросов</text>
+<rect x="870" y="457" width="270" height="71" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1005.0" cy="528.0" rx="135.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<ellipse cx="1005.0" cy="457.0" rx="135.0" ry="17.0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1005.0" y="489.0" text-anchor="middle" font-family="Arial" font-size="20">Учётная БД ERP</text>
+<polyline points="197,235 197,290" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="197,290 192.41442117327867,280.00137675357627 201.58557882672133,280.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="197,385 197,445" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="197,445 192.41442117327867,435.00137675357627 201.58557882672133,435.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="340,500 395,500 395,200 455,200" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="455,200 445.00137675357627,204.58557882672133 445.00137675357627,195.41442117327867" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="600,315 600,250" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="600,250 604.5855788267213,259.99862324642373 595.4144211732787,259.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="600,485 600,405" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="600,405 604.5855788267213,414.99862324642373 595.4144211732787,414.99862324642373" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="1005,270 1005,440" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="1005,440 1000.4144211732787,430.00137675357627 1009.5855788267213,430.00137675357627" fill="black" stroke="black" stroke-width="1.6"/>
+<polyline points="870,210 810,210 810,350 745,350" fill="none" stroke="black" stroke-width="1.6"/>
+<polygon points="745,350 754.9986232464238,345.4144211732787 754.9986232464238,354.5855788267213" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="795" y="302.0" text-anchor="middle" font-family="Arial" font-size="22">GET / POST</text>
+<polyline points="745,385 825,385 825,250 870,250" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="7 5"/>
+<polyline points="860.0013767535762,254.58557882672133 870,250 860.0013767535762,245.41442117327867" fill="none" stroke="black" stroke-width="1.6"/>
+<text x="810" y="435.0" text-anchor="middle" font-family="Arial" font-size="22">Ответ API</text>
+<text x="25" y="705.0" text-anchor="start" font-family="Arial" font-size="25">ERP запрашивает факты и подтверждает обработку; API не обращается к ERP</text>
+</svg>
